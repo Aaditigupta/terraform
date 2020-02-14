@@ -3,7 +3,7 @@ node {
    git 'https://github.com/Aaditigupta/terraform.git'
   }
 
- def project_terraform="terraform"
+ def project_terraform="terraform/04-Terraform/03-Ansible-Deploy/"
  dir(project_terraform) {
    stage('Instance Creation on AWS'){
    sh label: 'terraform', script: '/bin/terraform  init'
